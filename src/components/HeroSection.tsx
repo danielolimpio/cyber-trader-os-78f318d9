@@ -53,10 +53,17 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hologram" size="lg" className="group data-flow">
-                <Wifi className="w-5 h-5 mr-2" />
-                ABRIR CONTA
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hologram" size="lg" className="group data-flow" asChild>
+                <a
+                  href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Wifi className="w-5 h-5 mr-2" />
+                  ABRIR CONTA
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               
               <Button variant="neural" size="lg">

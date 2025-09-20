@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Zap, MessageSquare, Mail, Youtube, Twitter, Github } from "lucide-react";
+import { MessageSquare, Mail, Youtube, Twitter, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+import vespersLogo from "@/assets/vespers-logo.webp";
 
 export const Footer = () => {
   const footerSections = [
@@ -50,12 +51,7 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-                <Zap className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="font-orbitron font-bold text-2xl text-glow">
-                VESPERS BOT
-              </span>
+              <img src={vespersLogo} alt="Vespers Bot" className="w-10 h-10" />
             </div>
             
             <p className="text-muted-foreground leading-relaxed max-w-sm">
@@ -116,13 +112,25 @@ export const Footer = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button variant="neural" className="group">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                WhatsApp
+              <Button variant="neural" className="group" asChild>
+                <a
+                  href="https://wa.me/5512982519116?text=Olá, Gostaria de saber mais sobre a Vespers Bot."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageSquare className="w-4 h-4 mr-2" />
+                  WhatsApp
+                </a>
               </Button>
-              <Button variant="hologram">
-                <Mail className="w-4 h-4 mr-2" />
-                Email Suporte
+              <Button variant="hologram" asChild>
+                <a
+                  href="mailto:contato@vespersbot.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mail className="w-4 h-4 mr-2" />
+                  Email Suporte
+                </a>
               </Button>
             </div>
           </div>

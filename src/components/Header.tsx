@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X, MessageSquare } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import vespersLogo from "@/assets/vespers-logo.webp";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,12 +24,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-orbitron font-bold text-xl text-glow">
-              VESPERS BOT
-            </span>
+            <img src={vespersLogo} alt="Vespers Bot" className="w-8 h-8" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,7 +33,7 @@ export const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-base font-medium transition-colors hover:text-primary ${
                   isActive(item.href)
                     ? "text-primary text-glow"
                     : "text-muted-foreground"
@@ -50,11 +46,29 @@ export const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              Login
+            <Button 
+              variant="neural" 
+              size="sm"
+              asChild
+            >
+              <a
+                href="https://wa.me/5512982519116?text=Olá, Gostaria de saber mais sobre a Vespers Bot."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <MessageSquare className="w-4 h-4 mr-2" />
+                WhatsApp
+              </a>
             </Button>
-            <Button variant="hologram" size="sm">
-              ABRIR CONTA
+            <Button variant="hologram" size="sm" asChild>
+              <a
+                href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ABRIR CONTA
+              </a>
             </Button>
           </div>
 
@@ -77,7 +91,7 @@ export const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block text-sm font-medium transition-colors hover:text-primary ${
+                  className={`block text-base font-medium transition-colors hover:text-primary ${
                     isActive(item.href)
                       ? "text-primary text-glow"
                       : "text-muted-foreground"
@@ -88,11 +102,30 @@ export const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="ghost" size="sm" className="w-full">
-                  Login
+                <Button 
+                  variant="neural" 
+                  size="sm" 
+                  className="w-full"
+                  asChild
+                >
+                  <a
+                    href="https://wa.me/5512982519116?text=Olá, Gostaria de saber mais sobre a Vespers Bot."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center"
+                  >
+                    <MessageSquare className="w-4 h-4 mr-2" />
+                    WhatsApp
+                  </a>
                 </Button>
-                <Button variant="hologram" size="sm" className="w-full">
-                  ABRIR CONTA
+                <Button variant="hologram" size="sm" className="w-full" asChild>
+                  <a
+                    href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ABRIR CONTA
+                  </a>
                 </Button>
               </div>
             </div>
