@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Settings, BarChart3, Users, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const FeatureCards = () => {
   const features = [
@@ -64,13 +65,26 @@ export const FeatureCards = () => {
                     {feature.description}
                   </p>
 
-                  <Button 
-                    variant="ghost" 
-                    className="group/btn p-0 h-auto font-medium text-primary hover:text-primary"
-                  >
-                    {feature.action}
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
+                  {index === 0 ? (
+                    <Button 
+                      variant="ghost" 
+                      className="group/btn p-0 h-auto font-medium text-primary hover:text-primary"
+                      asChild
+                    >
+                      <Link to="/vinculacao-api">
+                        {feature.action}
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="ghost" 
+                      className="group/btn p-0 h-auto font-medium text-primary hover:text-primary"
+                    >
+                      {feature.action}
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  )}
                 </div>
 
                 {/* Hover Effect */}

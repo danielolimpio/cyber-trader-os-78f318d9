@@ -9,6 +9,7 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import LegalNotices from "./pages/LegalNotices";
 import CookiePolicy from "./pages/CookiePolicy";
+import APIBinding from "./pages/APIBinding";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/privacidade" element={<PrivacyPolicy />} />
           <Route path="/avisos" element={<LegalNotices />} />
           <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="/vinculacao-api" element={<APIBinding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
