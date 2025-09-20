@@ -62,13 +62,9 @@ export const Header = () => {
               </a>
             </Button>
             <Button variant="hologram" size="sm" asChild>
-              <a
-                href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="/abrir-conta">
                 ABRIR CONTA
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -119,13 +115,9 @@ export const Header = () => {
                   </a>
                 </Button>
                 <Button variant="hologram" size="sm" className="w-full" asChild>
-                  <a
-                    href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/abrir-conta">
                     ABRIR CONTA
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

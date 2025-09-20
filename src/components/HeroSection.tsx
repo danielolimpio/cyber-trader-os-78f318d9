@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wifi, TrendingUp, Shield, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-phone.jpg";
 
 export const HeroSection = () => {
@@ -54,16 +55,11 @@ export const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hologram" size="lg" className="group data-flow" asChild>
-                <a
-                  href="https://www.vespers.bot/portal/index/invite?invitation_code=mqOHBV"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center"
-                >
+                <Link to="/abrir-conta" className="flex items-center">
                   <Wifi className="w-5 h-5 mr-2" />
                   ABRIR CONTA
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </Button>
               
               <Button variant="neural" size="lg">

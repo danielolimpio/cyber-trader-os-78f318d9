@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const VideoTutorials = () => {
   const tutorials = [
@@ -125,12 +126,23 @@ export const VideoTutorials = () => {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA Section */}
         <div className="text-center mt-16">
-          <Button variant="hologram" size="lg" className="data-flow">
-            Ver Todos os Tutoriais
-            <ExternalLink className="w-5 h-5 ml-2" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="hologram" size="lg">
+              Ver Todos os Tutoriais
+            </Button>
+            <Button variant="neural" size="lg" asChild>
+              <Link to="/depositar">
+                Depositar USDT/USDC
+              </Link>
+            </Button>
+            <Button variant="cyber" size="lg" asChild>
+              <Link to="/comprar-gas">
+                Comprar Gas Fee
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

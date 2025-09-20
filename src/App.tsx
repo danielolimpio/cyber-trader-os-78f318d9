@@ -10,6 +10,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import LegalNotices from "./pages/LegalNotices";
 import CookiePolicy from "./pages/CookiePolicy";
 import APIBinding from "./pages/APIBinding";
+import AbrirConta from "./pages/AbrirConta";
+import Depositar from "./pages/Depositar";
+import ComprarGas from "./pages/ComprarGas";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +29,9 @@ const App = () => (
           <Route path="/avisos" element={<LegalNotices />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/vinculacao-api" element={<APIBinding />} />
+          <Route path="/abrir-conta" element={<AbrirConta />} />
+          <Route path="/depositar" element={<Depositar />} />
+          <Route path="/comprar-gas" element={<ComprarGas />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
