@@ -147,7 +147,15 @@ export const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 Vespers Bot. Todos os direitos reservados.
+              © 2025 Vespers Bot | Todos os direitos reservados | Desenvolvido por{" "}
+              <a 
+                href="https://danielolimpio.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                DanielOlimpio
+              </a>
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
@@ -156,6 +164,17 @@ export const Footer = () => {
                 <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse" />
                 Sistema Online
               </span>
+              
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/5512982519116?text=Olá, Gostaria de saber mais sobre a Vespers Bot."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-full transition-all duration-300 hover:scale-105 animate-pulse"
+              >
+                <MessageSquare className="w-4 h-4 mr-2" />
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>

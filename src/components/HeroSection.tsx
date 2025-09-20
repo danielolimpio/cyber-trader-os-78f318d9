@@ -87,27 +87,35 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Video */}
           <div className="relative lg:order-2">
             <div className="relative">
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 animate-pulse-glow" />
               
-              {/* Phone Frame */}
-              <div className="relative bg-gradient-card rounded-3xl p-2 border border-card-border backdrop-blur-sm">
-                <img
-                  src={heroImage}
-                  alt="Vespers Bot Interface"
-                  className="w-full h-auto rounded-2xl shadow-card"
-                />
-                
-                {/* Floating Elements */}
-                <div className="absolute top-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium animate-float">
-                  Online
+              {/* Video Frame */}
+              <div className="relative bg-gradient-card rounded-3xl p-3 border-2 border-card-border backdrop-blur-sm shadow-cyber">
+                <div className="relative aspect-video rounded-2xl overflow-hidden bg-black">
+                  <iframe
+                    src="https://www.youtube.com/embed/pDSge06WSnE?controls=0&showinfo=0&rel=0&modestbranding=1"
+                    title="Vespers Bot Demonstration"
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  
+                  {/* Screen Border Effect */}
+                  <div className="absolute inset-0 border-2 border-primary/30 rounded-2xl pointer-events-none" />
+                  <div className="absolute inset-2 border border-accent/20 rounded-xl pointer-events-none" />
                 </div>
                 
-                <div className="absolute bottom-4 left-4 bg-accent/90 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium animate-float" style={{ animationDelay: "2s" }}>
-                  +12.5%
+                {/* Floating Elements */}
+                <div className="absolute top-6 right-6 bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium animate-float">
+                  Live Demo
+                </div>
+                
+                <div className="absolute bottom-6 left-6 bg-accent/90 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium animate-float" style={{ animationDelay: "2s" }}>
+                  IA Ativa
                 </div>
               </div>
             </div>
