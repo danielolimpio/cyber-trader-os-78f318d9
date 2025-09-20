@@ -13,6 +13,11 @@ import APIBinding from "./pages/APIBinding";
 import AbrirConta from "./pages/AbrirConta";
 import Depositar from "./pages/Depositar";
 import ComprarGas from "./pages/ComprarGas";
+import ChaveAPIokx from "./pages/ChaveAPIokx";
+import ExecutarPasso from "./pages/ExecutarPasso";
+import Contato from "./pages/Contato";
+import CentralAjuda from "./pages/CentralAjuda";
+import Documentacao from "./pages/Documentacao";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +37,11 @@ const App = () => (
           <Route path="/abrir-conta" element={<AbrirConta />} />
           <Route path="/depositar" element={<Depositar />} />
           <Route path="/comprar-gas" element={<ComprarGas />} />
+          <Route path="/chave-api-okx" element={<ChaveAPIokx />} />
+          <Route path="/executar-passo" element={<ExecutarPasso />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/central-ajuda" element={<CentralAjuda />} />
+          <Route path="/documentacao" element={<Documentacao />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
