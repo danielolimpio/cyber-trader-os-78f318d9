@@ -1,97 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Vespers Bot - Futuristic Design System
+All colors MUST be HSL. Cyberpunk/futuristic theme with Binance yellow accents.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Core Theme - Deep Black Background with Binance Gold */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 95%;
+    
+    /* Card System - Dark with subtle borders */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 95%;
+    --card-border: 45 100% 51% / 0.2;
+    
+    /* Popover */
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 95%;
+    
+    /* Primary - Binance Gold */
+    --primary: 45 100% 51%;
+    --primary-foreground: 0 0% 7%;
+    --primary-glow: 45 100% 51% / 0.3;
+    
+    /* Secondary - Dark with gold accent */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 85%;
+    
+    /* Muted - Subtle grays */
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
+    
+    /* Accent - Cyan neon */
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 7%;
+    --accent-glow: 180 100% 50% / 0.3;
+    
+    /* Destructive - Red warning */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
+    
+    /* Borders and inputs */
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 45 100% 51%;
+    
+    /* Cyber Effects */
+    --cyber-grid: 180 100% 50% / 0.1;
+    --data-flow: 45 100% 51% / 0.15;
+    --hologram: linear-gradient(135deg, hsl(180 100% 50% / 0.2), hsl(45 100% 51% / 0.2));
+    --neural-network: radial-gradient(circle at 50% 50%, hsl(180 100% 50% / 0.1), transparent 70%);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 100% 51%), hsl(45 100% 45%));
+    --gradient-cyber: linear-gradient(135deg, hsl(180 100% 50% / 0.8), hsl(45 100% 51% / 0.8));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 3%), hsl(0 0% 8%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 7% / 0.8), hsl(0 0% 12% / 0.8));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow));
+    --shadow-cyber: 0 0 50px hsl(var(--accent-glow));
+    --shadow-card: 0 10px 50px hsl(0 0% 0% / 0.5);
+    
+    /* Animation */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --pulse-glow: 0 0 20px hsl(var(--primary-glow));
+    
+    --radius: 0.75rem;
   }
+}
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+@layer base {
+  * {
+    @apply border-border;
   }
+  
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(180 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(45 100% 51% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(180 100% 50% / 0.03) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Cyber Grid Animation */
+  .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(var(--cyber-grid)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--cyber-grid)) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+  }
+  
+  /* Data Flow Effect */
+  .data-flow {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .data-flow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(var(--data-flow)), transparent);
+    animation: data-stream 3s ease-in-out infinite;
+  }
+  
+  /* Holographic Button */
+  .btn-hologram {
+    position: relative;
+    background: var(--gradient-primary);
+    border: 1px solid hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition-cyber);
+    overflow: hidden;
+  }
+  
+  .btn-hologram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: var(--transition-cyber);
+  }
+  
+  .btn-hologram:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+  
+  .btn-hologram:hover::before {
+    left: 100%;
+  }
+  
+  /* Cyber Card */
+  .cyber-card {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--card-border));
+    backdrop-filter: blur(10px);
+    transition: var(--transition-cyber);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cyber-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-cyber);
+    opacity: 0;
+    transition: var(--transition-cyber);
+  }
+  
+  .cyber-card:hover {
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: var(--shadow-card);
+    transform: translateY(-5px);
+  }
+  
+  .cyber-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Glow Text */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary-glow));
+  }
+  
+  .text-cyber-glow {
+    text-shadow: 0 0 15px hsl(var(--accent-glow));
+  }
+  
+  /* Neural Network Background */
+  .neural-bg {
+    background-image: var(--neural-network);
+    background-size: 200px 200px;
+    animation: neural-pulse 4s ease-in-out infinite;
+  }
+  
+  /* Video Tutorial Card */
+  .video-card {
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    transition: var(--transition-cyber);
+  }
+  
+  .video-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: hsl(var(--primary));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: var(--transition-cyber);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-card::before {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    color: hsl(var(--primary-foreground));
+    font-size: 20px;
+    opacity: 0;
+    transition: var(--transition-cyber);
+    z-index: 10;
+  }
+  
+  .video-card:hover::after,
+  .video-card:hover::before {
+    opacity: 1;
+  }
+  
+  .video-card:hover {
+    border-color: hsl(var(--primary) / 0.6);
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-data-stream {
+    animation: data-stream 3s ease-in-out infinite;
+  }
+}
+
+/* Keyframes */
+@keyframes grid-move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+@keyframes data-stream {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes neural-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: var(--shadow-glow); }
+  50% { box-shadow: var(--pulse-glow); }
 }
 
 @layer base {
