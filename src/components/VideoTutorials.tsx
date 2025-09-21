@@ -7,43 +7,43 @@ export const VideoTutorials = () => {
     {
       title: "Registrar Conta na Exchange",
       description: "Passo a passo para criar conta na Binance, OKX e Huobi",
-      duration: "5:30",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "1:00",
+      videoId: "xn5tg5d9ZJQ",
       category: "Configuração",
     },
     {
       title: "Configurar Chave API",
       description: "Como gerar e configurar suas chaves API com segurança",
-      duration: "8:15",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "1:00",
+      videoId: "XvUdJcKESfQ",
       category: "Segurança",
     },
     {
-      title: "Depositar USDT/USDC",
+      title: "Como Depositar USDT/USDC",
       description: "Aprenda a depositar stablecoins para começar a operar",
-      duration: "4:45",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "1:00",
+      videoId: "5vmjjhqm_YU",
       category: "Depósito",
     },
     {
-      title: "Comprar Gas Fee",
+      title: "Como Comprar Gas Fee",
       description: "Como adquirir gas para as operações automáticas",
-      duration: "6:20",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "1:00",
+      videoId: "dCazRjJIfwI",
       category: "Configuração",
     },
     {
       title: "Ativar Bot Automático",
       description: "Configurações finais para ativar a automação",
-      duration: "7:10",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "1:00",
+      videoId: "NDY0oM6TaOQ",
       category: "Automação",
     },
     {
       title: "Análise de Performance",
       description: "Como interpretar relatórios e otimizar resultados",
-      duration: "9:45",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      duration: "10:30",
+      videoId: "Ud9j-jXzdnU",
       category: "Análise",
     },
   ];
@@ -88,10 +88,14 @@ export const VideoTutorials = () => {
               className="video-card rounded-2xl overflow-hidden group"
             >
               {/* Thumbnail */}
-              <div className="relative aspect-video bg-gradient-card">
-                <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
-                  <Play className="w-16 h-16 text-primary opacity-50" />
-                </div>
+              <div className="relative aspect-video bg-gradient-card overflow-hidden">
+                <iframe
+                  src={`https://www.youtube.com/embed/${tutorial.videoId}?controls=1&modestbranding=1&rel=0`}
+                  title={tutorial.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
                 
                 {/* Duration Badge */}
                 <div className="absolute bottom-3 right-3 bg-background/90 text-foreground px-2 py-1 rounded text-sm font-medium">
@@ -129,8 +133,10 @@ export const VideoTutorials = () => {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hologram" size="lg">
-              Ver Todos os Tutoriais
+            <Button variant="hologram" size="lg" asChild>
+              <Link to="/tutoriais">
+                Ver Todos os Tutoriais
+              </Link>
             </Button>
             <Button variant="neural" size="lg" asChild>
               <Link to="/depositar">

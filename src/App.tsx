@@ -18,6 +18,7 @@ import ExecutarPasso from "./pages/ExecutarPasso";
 import Contato from "./pages/Contato";
 import CentralAjuda from "./pages/CentralAjuda";
 import Documentacao from "./pages/Documentacao";
+import Tutoriais from "./pages/Tutoriais";
 import Historicos from "./pages/Historicos";
 import Estrategias from "./pages/Estrategias";
 
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/contato" element={<Contato />} />
           <Route path="/central-ajuda" element={<CentralAjuda />} />
           <Route path="/documentacao" element={<Documentacao />} />
+          <Route path="/tutoriais" element={<Tutoriais />} />
           <Route path="/historicos" element={<Historicos />} />
           <Route path="/estrategias" element={<Estrategias />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
