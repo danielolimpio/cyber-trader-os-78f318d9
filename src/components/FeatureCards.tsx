@@ -16,7 +16,7 @@ export const FeatureCards = () => {
       title: "Históricos",
       description: "Acompanhe performance detalhada, ganhos e análises de todas as operações.",
       action: "Ver Relatórios",
-      color: "accent",
+      color: "primary",
     },
     {
       icon: Users,
@@ -72,6 +72,17 @@ export const FeatureCards = () => {
                       asChild
                     >
                       <Link to="/vinculacao-api">
+                        {feature.action}
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                  ) : index === 1 ? (
+                    <Button 
+                      variant="ghost" 
+                      className="group/btn p-0 h-auto font-medium text-primary hover:text-primary"
+                      asChild
+                    >
+                      <Link to="/historicos">
                         {feature.action}
                         <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                       </Link>
