@@ -80,15 +80,15 @@ export const VideoTutorials = () => {
           ))}
         </div>
 
-        {/* Video Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Video Grid - Formato Shorts */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 md:gap-6">
           {tutorials.map((tutorial, index) => (
             <div
               key={tutorial.title}
               className="video-card rounded-2xl overflow-hidden group"
             >
-              {/* Thumbnail */}
-              <div className="relative aspect-video bg-gradient-card overflow-hidden">
+              {/* Thumbnail - Formato Vertical (9:16) */}
+              <div className="relative bg-gradient-card overflow-hidden" style={{ aspectRatio: '9/16' }}>
                 <iframe
                   src={`https://www.youtube.com/embed/${tutorial.videoId}?controls=1&modestbranding=1&rel=0`}
                   title={tutorial.title}
