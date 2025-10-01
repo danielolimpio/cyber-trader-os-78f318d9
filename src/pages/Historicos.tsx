@@ -123,11 +123,6 @@ const Historicos = () => {
                       allowFullScreen
                       className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center">
-                        <Play className="w-8 h-8 text-primary-foreground ml-1" />
-                      </div>
-                    </div>
                   </div>
                   <div className="p-6">
                     <h3 className="font-orbitron font-bold text-lg mb-2 group-hover:text-primary transition-colors">
