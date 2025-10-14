@@ -2,34 +2,38 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare, Mail, Youtube, Twitter, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import vespersLogo from "@/assets/vespers-logo.webp";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+  
   const footerSections = [
     {
-      title: "Plataforma",
+      title: t("footer.platform"),
       links: [
-        { name: "Início", href: "/" },
-        { name: "Históricos", href: "/historicos" },
-        { name: "Estratégias", href: "/estrategias" },
-        { name: "Tutoriais", href: "/tutoriais" },
+        { name: t("nav.home"), href: "/" },
+        { name: t("nav.history"), href: "/historicos" },
+        { name: t("nav.strategies"), href: "/estrategias" },
+        { name: t("nav.tutorials"), href: "/tutoriais" },
+        { name: t("nav.about"), href: "/sobre" },
       ],
     },
     {
-      title: "Suporte",
+      title: t("footer.support"),
       links: [
-        { name: "Central de Ajuda", href: "/ajuda" },
-        { name: "Documentação", href: "/docs" },
-        { name: "Status do Sistema", href: "/status" },
-        { name: "Contato", href: "/contato" },
+        { name: t("footer.helpCenter"), href: "/central-ajuda" },
+        { name: t("footer.documentation"), href: "/documentacao" },
+        { name: t("footer.systemStatus"), href: "/status" },
+        { name: t("nav.contact"), href: "/contato" },
       ],
     },
     {
-      title: "Legal",
+      title: t("footer.legal"),
       links: [
-        { name: "Termos de Uso", href: "/termos" },
-        { name: "Política de Privacidade", href: "/privacidade" },
-        { name: "Avisos Legais", href: "/avisos" },
-        { name: "Cookies", href: "/cookies" },
+        { name: t("footer.terms"), href: "/termos" },
+        { name: t("footer.privacy"), href: "/privacidade" },
+        { name: t("footer.legalNotices"), href: "/avisos" },
+        { name: t("footer.cookies"), href: "/cookies" },
       ],
     },
   ];
@@ -55,8 +59,7 @@ export const Footer = () => {
             </div>
             
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Automatização inteligente para o mercado de futuros de criptomoedas.
-              Transforme sua estratégia com IA avançada.
+              {t("footer.description")}
             </p>
 
             <div className="flex space-x-3">
@@ -104,10 +107,10 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
               <h3 className="font-orbitron font-bold text-lg mb-2">
-                Precisa de Ajuda?
+                {t("footer.needHelp")}
               </h3>
               <p className="text-muted-foreground">
-                Nossa equipe está sempre pronta para ajudar
+                {t("footer.teamReady")}
               </p>
             </div>
             
@@ -119,7 +122,7 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   <MessageSquare className="w-4 h-4 mr-2" />
-                  WhatsApp
+                  {t("footer.whatsapp")}
                 </a>
               </Button>
               <Button variant="hologram" asChild>
@@ -129,7 +132,7 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   <Mail className="w-4 h-4 mr-2" />
-                  Email Suporte
+                  {t("footer.emailSupport")}
                 </a>
               </Button>
             </div>
@@ -140,13 +143,10 @@ export const Footer = () => {
         <div className="py-8 border-t border-border">
           <div className="bg-card/50 border border-card-border rounded-2xl p-6">
             <h4 className="font-orbitron font-bold text-primary mb-3">
-              ⚠️ Aviso Legal
+              ⚠️ {t("footer.legalWarning")}
             </h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Os investimentos em ativos digitais envolvem riscos significativos, incluindo perda total do capital. 
-              As estratégias automatizadas não garantem ganhos. O uso de bots é responsabilidade exclusiva do usuário. 
-              Recomendamos análise técnica e consultoria financeira qualificada antes de operar. 
-              Este site não constitui aconselhamento financeiro.
+              {t("footer.disclaimer")}
             </p>
           </div>
         </div>
@@ -155,7 +155,7 @@ export const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2025 Vespers Bot | Todos os direitos reservados | Desenvolvido por{" "}
+              © 2025 Vespers Bot | {t("footer.rights")} | {t("footer.developedBy")}{" "}
               <a 
                 href="https://danielolimpio.com/" 
                 target="_blank" 
@@ -167,22 +167,11 @@ export const Footer = () => {
             </p>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <span>Versão 2.1.0</span>
+              <span>{t("footer.version")} 2.1.0</span>
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse" />
-                Sistema Online
+                {t("footer.systemOnline")}
               </span>
-              
-              {/* WhatsApp Button */}
-              <a
-                href="https://wa.me/5512982519116?text=Olá, Gostaria de saber mais sobre a Vespers Bot."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-full transition-all duration-300 hover:scale-105 animate-pulse"
-              >
-                <MessageSquare className="w-4 h-4 mr-2" />
-                WhatsApp
-              </a>
             </div>
           </div>
         </div>

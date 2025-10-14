@@ -3,11 +3,13 @@ import { HeroSection } from "@/components/HeroSection";
 import { FeatureCards } from "@/components/FeatureCards";
 import { VideoTutorials } from "@/components/VideoTutorials";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <FloatingWhatsApp />
       <main>
         <HeroSection />
         <FeatureCards />

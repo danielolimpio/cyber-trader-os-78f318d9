@@ -3,17 +3,21 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, MessageSquare } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import vespersLogo from "@/assets/vespers-logo.webp";
+import { LanguageSelector } from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navigation = [
-    { name: "Início", href: "/" },
-    { name: "Históricos", href: "/historicos" },
-    { name: "Estratégias", href: "/estrategias" },
-    { name: "Tutoriais", href: "/tutoriais" },
-    { name: "Contato", href: "/contato" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.history"), href: "/historicos" },
+    { name: t("nav.strategies"), href: "/estrategias" },
+    { name: t("nav.tutorials"), href: "/tutoriais" },
+    { name: t("nav.contact"), href: "/contato" },
+    { name: t("nav.about"), href: "/sobre" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -46,6 +50,7 @@ export const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             <Button 
               variant="neural" 
               size="sm"
@@ -58,12 +63,12 @@ export const Header = () => {
                 className="flex items-center"
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
-                WhatsApp
+                {t("footer.whatsapp")}
               </a>
             </Button>
             <Button variant="hologram" size="sm" asChild>
               <Link to="/abrir-conta">
-                ABRIR CONTA
+                {t("nav.openAccount")}
               </Link>
             </Button>
           </div>
@@ -98,6 +103,7 @@ export const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
+                <LanguageSelector />
                 <Button 
                   variant="neural" 
                   size="sm" 
@@ -111,12 +117,12 @@ export const Header = () => {
                     className="flex items-center justify-center"
                   >
                     <MessageSquare className="w-4 h-4 mr-2" />
-                    WhatsApp
+                    {t("footer.whatsapp")}
                   </a>
                 </Button>
                 <Button variant="hologram" size="sm" className="w-full" asChild>
                   <Link to="/abrir-conta">
-                    ABRIR CONTA
+                    {t("nav.openAccount")}
                   </Link>
                 </Button>
               </div>
