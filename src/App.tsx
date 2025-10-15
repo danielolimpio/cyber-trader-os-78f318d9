@@ -22,6 +22,7 @@ import Tutoriais from "./pages/Tutoriais";
 import Historicos from "./pages/Historicos";
 import Estrategias from "./pages/Estrategias";
 import Sobre from "./pages/Sobre";
+import SystemStatus from "./pages/SystemStatus";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/historicos" element={<Historicos />} />
           <Route path="/estrategias" element={<Estrategias />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/status" element={<SystemStatus />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

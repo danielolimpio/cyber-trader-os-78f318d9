@@ -51,5 +51,32 @@
     "reason4Text": "다양한 시장 조건에서 투명하고 검증 가능한 결과.",
     "commitment": "우리의 약속",
     "commitmentText": "우리는 완전한 투명성을 약속합니다. 튜토리얼, 완전한 문서 및 운영 기록을 통해 지속적인 교육을 제공합니다. 우리의 목표는 단순히 도구를 제공하는 것이 아니라 암호화폐 시장의 위험과 기회에 대해 정보를 얻은 성공적인 트레이더 커뮤니티를 구축하는 것입니다."
+  },
+  "status": {
+    "title": "시스템 상태",
+    "subtitle": "Vespers Bot 플랫폼의 모든 구성 요소 상태를 실시간으로 모니터링",
+    "realTime": "실시간",
+    "allSystemsOperational": "모든 시스템 작동 중",
+    "allComponentsRunning": "모든 구성 요소가 완벽하게 실행 중입니다",
+    "systemComponents": "시스템 구성 요소",
+    "tradingBot": "트레이딩 봇",
+    "apiConnections": "API 연결",
+    "database": "데이터베이스",
+    "cloudInfrastructure": "클라우드 인프라",
+    "fewSecondsAgo": "몇 초 전",
+    "lastUpdate": "마지막 업데이트",
+    "operational": "작동 중",
+    "uptime": "가동 시간",
+    "exchangeConnections": "거래소 연결",
+    "connected": "연결됨",
+    "latency": "지연 시간",
+    "performanceMetrics": "성능 지표",
+    "lastIncidents": "최근 사고",
+    "noIncidents": "지난 90일 동안 사고 없음",
+    "averageResponseTime": "평균 응답 시간",
+    "last24Hours": "지난 24시간",
+    "scheduledMaintenance": "예정된 유지 관리",
+    "noScheduledMaintenance": "현재 예정된 유지 관리 없음",
+    "maintenanceNotification": "예정된 유지 관리에 대해 48시간 전에 알림을 받습니다"
   }
 }

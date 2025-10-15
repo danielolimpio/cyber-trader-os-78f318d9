@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Mail, Clock, ExternalLink } from "lucide-react";
@@ -13,6 +14,7 @@ const Contato = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <FloatingWhatsApp />
       
       <main className="pt-20">
         {/* Hero Section */}

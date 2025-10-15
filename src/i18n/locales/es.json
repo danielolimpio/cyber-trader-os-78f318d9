@@ -51,5 +51,32 @@
     "reason4Text": "Resultados transparentes y verificables en diferentes condiciones de mercado.",
     "commitment": "Nuestro Compromiso",
     "commitmentText": "Estamos comprometidos con la transparencia total. Proporcionamos educación continua a través de tutoriales, documentación completa e historial de operaciones. Nuestro objetivo no es solo proporcionar una herramienta, sino construir una comunidad de traders exitosos e informados sobre los riesgos y oportunidades del mercado cripto."
+  },
+  "status": {
+    "title": "Estado del Sistema",
+    "subtitle": "Supervise el estado de todos los componentes de la plataforma Vespers Bot en tiempo real",
+    "realTime": "Tiempo Real",
+    "allSystemsOperational": "Todos los Sistemas Operativos",
+    "allComponentsRunning": "Todos los componentes están funcionando perfectamente",
+    "systemComponents": "Componentes del Sistema",
+    "tradingBot": "Bot de Trading",
+    "apiConnections": "Conexiones API",
+    "database": "Base de Datos",
+    "cloudInfrastructure": "Infraestructura Cloud",
+    "fewSecondsAgo": "Hace unos segundos",
+    "lastUpdate": "Última actualización",
+    "operational": "Operativo",
+    "uptime": "Tiempo en línea",
+    "exchangeConnections": "Conexiones con Exchanges",
+    "connected": "Conectado",
+    "latency": "Latencia",
+    "performanceMetrics": "Métricas de Rendimiento",
+    "lastIncidents": "Incidentes Recientes",
+    "noIncidents": "Sin incidentes en los últimos 90 días",
+    "averageResponseTime": "Tiempo Promedio de Respuesta",
+    "last24Hours": "Últimas 24 horas",
+    "scheduledMaintenance": "Mantenimiento Programado",
+    "noScheduledMaintenance": "No hay mantenimiento programado en este momento",
+    "maintenanceNotification": "Se le notificará con 48 horas de anticipación sobre cualquier mantenimiento programado"
   }
 }

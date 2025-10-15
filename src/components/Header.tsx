@@ -13,11 +13,11 @@ export const Header = () => {
 
   const navigation = [
     { name: t("nav.home"), href: "/" },
+    { name: t("nav.about"), href: "/sobre" },
     { name: t("nav.history"), href: "/historicos" },
     { name: t("nav.strategies"), href: "/estrategias" },
     { name: t("nav.tutorials"), href: "/tutoriais" },
     { name: t("nav.contact"), href: "/contato" },
-    { name: t("nav.about"), href: "/sobre" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

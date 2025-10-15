@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -77,6 +78,7 @@ const Historicos = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <FloatingWhatsApp />
       
       <main className="pt-16">
         {/* Hero Section */}

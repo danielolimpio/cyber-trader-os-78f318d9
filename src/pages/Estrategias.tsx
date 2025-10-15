@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -64,6 +65,7 @@ const Estrategias = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <FloatingWhatsApp />
       
       <main className="pt-16">
         {/* Hero Section */}

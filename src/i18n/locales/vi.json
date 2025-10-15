@@ -51,5 +51,32 @@
     "reason4Text": "Kết quả minh bạch và có thể xác minh trong các điều kiện thị trường khác nhau.",
     "commitment": "Cam kết của chúng tôi",
     "commitmentText": "Chúng tôi cam kết minh bạch hoàn toàn. Chúng tôi cung cấp giáo dục liên tục thông qua hướng dẫn, tài liệu đầy đủ và lịch sử giao dịch. Mục tiêu của chúng tôi không chỉ là cung cấp một công cụ, mà là xây dựng một cộng đồng các nhà giao dịch thành công được thông báo về rủi ro và cơ hội của thị trường tiền điện tử."
+  },
+  "status": {
+    "title": "Trạng thái hệ thống",
+    "subtitle": "Giám sát trạng thái của tất cả các thành phần nền tảng Vespers Bot theo thời gian thực",
+    "realTime": "Thời gian thực",
+    "allSystemsOperational": "Tất cả hệ thống hoạt động",
+    "allComponentsRunning": "Tất cả các thành phần đang chạy hoàn hảo",
+    "systemComponents": "Thành phần hệ thống",
+    "tradingBot": "Bot giao dịch",
+    "apiConnections": "Kết nối API",
+    "database": "Cơ sở dữ liệu",
+    "cloudInfrastructure": "Cơ sở hạ tầng đám mây",
+    "fewSecondsAgo": "Vài giây trước",
+    "lastUpdate": "Cập nhật cuối",
+    "operational": "Hoạt động",
+    "uptime": "Thời gian hoạt động",
+    "exchangeConnections": "Kết nối sàn giao dịch",
+    "connected": "Đã kết nối",
+    "latency": "Độ trễ",
+    "performanceMetrics": "Chỉ số hiệu suất",
+    "lastIncidents": "Sự cố gần đây",
+    "noIncidents": "Không có sự cố trong 90 ngày qua",
+    "averageResponseTime": "Thời gian phản hồi trung bình",
+    "last24Hours": "24 giờ qua",
+    "scheduledMaintenance": "Bảo trì đã lên lịch",
+    "noScheduledMaintenance": "Hiện không có bảo trì đã lên lịch",
+    "maintenanceNotification": "Bạn sẽ được thông báo trước 48 giờ về bất kỳ bảo trì đã lên lịch nào"
   }
 }
