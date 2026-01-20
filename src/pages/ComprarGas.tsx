@@ -63,33 +63,41 @@ const ComprarGas = () => {
       color: "border-gray-500",
     },
     {
-      name: "Starter Vault",
+      name: "Mini Vault",
       usdt: "50 USDT", 
       vespers: "50 VESPERS",
       color: "border-blue-500",
     },
     {
-      name: "Growth Catalyst",
+      name: "Starter Vault",
       usdt: "100 USDT",
       vespers: "100 VESPERS", 
       color: "border-green-500",
-      cashback: "Cashback de $200 USDT",
+      cashback: "Cashback de $200",
+    },
+    {
+      name: "Growth Catalyst",
+      usdt: "200 USDT",
+      vespers: "260 VESPERS",
+      color: "border-yellow-500",
+      bonus: "+60 VESPERS",
+      cashback: "Cashback de $400",
     },
     {
       name: "Yield Engine",
-      usdt: "250 USDT",
-      vespers: "280 VESPERS",
-      color: "border-yellow-500",
-      bonus: "+30 VESPERS BÔNUS",
-      cashback: "Cashback de $500 USDT",
+      usdt: "500 USDT",
+      vespers: "750 VESPERS",
+      color: "border-orange-500",
+      bonus: "+250 VESPERS",
+      cashback: "Cashback de $1000",
     },
     {
       name: "Alpha Elite",
       usdt: "1000 USDT",
-      vespers: "1500 VESPERS",
+      vespers: "2000 VESPERS",
       color: "border-purple-500",
-      bonus: "+500 VESPERS BÔNUS",
-      cashback: "Cashback de $2000 USDT",
+      bonus: "+1000 VESPERS",
+      cashback: "Cashback de $2000",
     },
   ];
 
@@ -161,7 +169,7 @@ const ComprarGas = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-16 pt-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-7xl mx-auto mb-16 pt-6">
               {gasPackages.map((pkg, index) => (
                 <div
                   key={pkg.name}
