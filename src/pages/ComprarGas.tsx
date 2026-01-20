@@ -161,11 +161,11 @@ const ComprarGas = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-16">
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-16 pt-6">
               {gasPackages.map((pkg, index) => (
                 <div
                   key={pkg.name}
-                  className="cyber-card rounded-2xl p-6 group animate-float relative"
+                  className="cyber-card rounded-2xl p-6 group animate-float relative overflow-visible"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {pkg.cashback && (
