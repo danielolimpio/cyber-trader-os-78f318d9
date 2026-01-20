@@ -23,6 +23,7 @@ import Historicos from "./pages/Historicos";
 import Estrategias from "./pages/Estrategias";
 import Sobre from "./pages/Sobre";
 import SystemStatus from "./pages/SystemStatus";
+import Sitemap from "./pages/Sitemap";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/estrategias" element={<Estrategias />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/status" element={<SystemStatus />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

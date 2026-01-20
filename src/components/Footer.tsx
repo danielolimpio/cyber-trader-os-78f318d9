@@ -34,6 +34,7 @@ export const Footer = () => {
         { name: t("footer.privacy"), href: "/privacidade" },
         { name: t("footer.legalNotices"), href: "/avisos" },
         { name: t("footer.cookies"), href: "/cookies" },
+        { name: "Sitemap", href: "/sitemap" },
       ],
     },
   ];
