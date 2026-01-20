@@ -73,6 +73,7 @@ const ComprarGas = () => {
       usdt: "100 USDT",
       vespers: "100 VESPERS", 
       color: "border-green-500",
+      cashback: "Cashback de $200 USDT",
     },
     {
       name: "Yield Engine",
@@ -80,6 +81,7 @@ const ComprarGas = () => {
       vespers: "280 VESPERS",
       color: "border-yellow-500",
       bonus: "+30 VESPERS BÔNUS",
+      cashback: "Cashback de $500 USDT",
     },
     {
       name: "Alpha Elite",
@@ -87,7 +89,7 @@ const ComprarGas = () => {
       vespers: "1500 VESPERS",
       color: "border-purple-500",
       bonus: "+500 VESPERS BÔNUS",
-      popular: true,
+      cashback: "Cashback de $2000 USDT",
     },
   ];
 
@@ -163,15 +165,13 @@ const ComprarGas = () => {
               {gasPackages.map((pkg, index) => (
                 <div
                   key={pkg.name}
-                  className={`cyber-card rounded-2xl p-6 group animate-float relative ${
-                    pkg.popular ? 'ring-2 ring-primary/50' : ''
-                  }`}
+                  className="cyber-card rounded-2xl p-6 group animate-float relative"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {pkg.popular && (
+                  {pkg.cashback && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-gradient-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
-                        MAIS POPULAR
+                      <span className="bg-gradient-to-r from-green-500 to-emerald-400 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                        {pkg.cashback}
                       </span>
                     </div>
                   )}
