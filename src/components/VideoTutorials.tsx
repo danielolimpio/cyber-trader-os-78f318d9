@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Play, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { YouTubeLazy } from "@/components/YouTubeLazy";
 
 export const VideoTutorials = () => {
   const tutorials = [
@@ -89,11 +90,9 @@ export const VideoTutorials = () => {
             >
               {/* Thumbnail - Formato Vertical (9:16) */}
               <div className="relative bg-gradient-card overflow-hidden" style={{ aspectRatio: '9/16' }}>
-                <iframe
-                  src={`https://www.youtube.com/embed/${tutorial.videoId}?controls=1&modestbranding=1&rel=0`}
+                <YouTubeLazy
+                  videoId={tutorial.videoId}
                   title={tutorial.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
                   className="w-full h-full"
                 />
                 
