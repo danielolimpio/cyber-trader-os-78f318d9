@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { X, MessageSquare } from "lucide-react";
-import robotGif from "@/assets/vespers-robot.gif";
+const robotGif = new URL("@/assets/vespers-robot.gif", import.meta.url).href;
 
 const STORAGE_KEY = "vespers_popup_shown";
 
