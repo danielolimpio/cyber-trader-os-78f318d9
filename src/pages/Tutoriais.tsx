@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Play, Clock, BookOpen } from "lucide-react";
+import { Clock, BookOpen } from "lucide-react";
+import { YouTubeLazy } from "@/components/YouTubeLazy";
 
 const Tutoriais = () => {
   const tutorials = [
