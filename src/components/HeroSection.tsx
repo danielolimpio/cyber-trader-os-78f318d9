@@ -100,12 +100,10 @@ export const HeroSection = () => {
               {/* Video Frame */}
               <div className="relative bg-gradient-card rounded-3xl p-3 border-2 border-card-border backdrop-blur-sm shadow-cyber">
                 <div className="relative aspect-video rounded-2xl overflow-hidden bg-black">
-                  <iframe
-                    src="https://www.youtube.com/embed/pDSge06WSnE?controls=0&showinfo=0&rel=0&modestbranding=1"
+                  <YouTubeLazy
+                    videoId="pDSge06WSnE"
                     title="Vespers Bot Demonstration"
                     className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
                   />
                   
                   {/* Screen Border Effect */}
