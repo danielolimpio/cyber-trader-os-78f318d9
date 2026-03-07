@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Play, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { YouTubeLazy } from "@/components/YouTubeLazy";
 
 export const VideoTutorials = () => {
   const tutorials = [
