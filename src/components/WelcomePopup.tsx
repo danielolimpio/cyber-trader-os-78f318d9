@@ -50,7 +50,7 @@ export const WelcomePopup = () => {
             <img
               src={robotGif}
               alt="Vespers Bot"
-              className="relative w-36 h-36 object-contain drop-shadow-[0_0_20px_rgba(247,181,0,0.4)]"
+              className="relative w-52 h-52 object-contain drop-shadow-[0_0_20px_rgba(247,181,0,0.4)]"
             />
           </div>
 
@@ -69,10 +69,8 @@ export const WelcomePopup = () => {
             Entre em contato pelo WhatsApp para ganhar uma licença grátis válida por <strong className="text-white">3 anos!</strong>
           </p>
 
-          {/* WhatsApp number */}
-          <p className="mb-4 text-sm font-semibold text-white/90">
-            📱 (12) 98251-9116
-          </p>
+
+
 
           {/* WhatsApp Button */}
           <a
