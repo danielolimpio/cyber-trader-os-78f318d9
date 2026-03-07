@@ -119,11 +119,9 @@ const Historicos = () => {
               {videos.map((video, index) => (
                 <Card key={video.id} className="cyber-card group cursor-pointer">
                   <div className="relative aspect-[9/16] rounded-lg overflow-hidden">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${video.id}?controls=1&modestbranding=1&rel=0`}
+                    <YouTubeLazy
+                      videoId={video.id}
                       title={video.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
                       className="w-full h-full"
                     />
                   </div>

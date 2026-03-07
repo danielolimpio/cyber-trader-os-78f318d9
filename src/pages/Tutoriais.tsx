@@ -59,11 +59,9 @@ const Tutoriais = () => {
               {tutorials.map((tutorial, index) => (
                 <Card key={tutorial.id} className="cyber-card group">
                   <div className="relative aspect-[9/16] rounded-lg overflow-hidden">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${tutorial.id}?controls=1&modestbranding=1&rel=0`}
+                    <YouTubeLazy
+                      videoId={tutorial.id}
                       title={tutorial.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
                       className="w-full h-full"
                     />
                   </div>
