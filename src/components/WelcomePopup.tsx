@@ -50,7 +50,7 @@ export const WelcomePopup = () => {
             <img
               src={robotGif}
               alt="Vespers Bot"
-              className="relative w-36 h-36 object-contain drop-shadow-[0_0_20px_rgba(247,181,0,0.4)]"
+              className="relative w-52 h-52 object-contain drop-shadow-[0_0_20px_rgba(247,181,0,0.4)]"
             />
           </div>
 
