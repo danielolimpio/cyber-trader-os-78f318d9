@@ -69,10 +69,8 @@ export const WelcomePopup = () => {
             Entre em contato pelo WhatsApp para ganhar uma licença grátis válida por <strong className="text-white">3 anos!</strong>
           </p>
 
-          {/* WhatsApp number */}
-          <p className="mb-4 text-sm font-semibold text-white/90">
-            📱 (12) 98251-9116
-          </p>
+
+
 
           {/* WhatsApp Button */}
           <a
