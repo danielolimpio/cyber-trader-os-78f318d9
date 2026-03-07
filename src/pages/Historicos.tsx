@@ -11,7 +11,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
-import { Play, TrendingUp, Calendar, DollarSign } from "lucide-react";
+import { TrendingUp, Calendar, DollarSign } from "lucide-react";
+import { YouTubeLazy } from "@/components/YouTubeLazy";
 import result130 from "@/assets/result-130.webp";
 import result145 from "@/assets/result-145.webp";
 import result157 from "@/assets/result-157.webp";
