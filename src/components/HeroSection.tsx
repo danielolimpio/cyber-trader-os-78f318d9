@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Wifi, TrendingUp, Shield, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-phone.jpg";
+import { YouTubeLazy } from "@/components/YouTubeLazy";
 
 export const HeroSection = () => {
   return (
