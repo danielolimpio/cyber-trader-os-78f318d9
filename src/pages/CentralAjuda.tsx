@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -56,6 +57,11 @@ const CentralAjuda = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Central de Ajuda | Vespers Bot</title>
+        <meta name="description" content="Central de ajuda da Vespers Bot. Encontre respostas para dúvidas frequentes sobre conta, depósito, API e estratégias." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/central-ajuda" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">
