@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,6 +19,11 @@ const ChaveAPIokx = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Configurar API OKX | Vespers Bot</title>
+        <meta name="description" content="Configure sua chave API da OKX na Vespers Bot. Guia completo com instruções de segurança e vinculação de IP." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/chave-api-okx" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">
