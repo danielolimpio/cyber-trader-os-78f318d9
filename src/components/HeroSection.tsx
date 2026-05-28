@@ -22,12 +22,10 @@ export const HeroSection = () => {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-orbitron font-bold leading-tight">
-                Onde a{" "}
                 <span className="text-glow bg-gradient-primary bg-clip-text text-transparent">
-                  precisão
+                  Vespers Bot
                 </span>{" "}
-                encontra a{" "}
-                <span className="text-cyber-glow">oportunidade</span>
+                — Automação Inteligente para Criptomoedas
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-lg">
