@@ -54,6 +54,11 @@ const Sitemap = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Sitemap | Vespers Bot</title>
+        <meta name="description" content="Navegue por todas as páginas do Vespers Bot. Mapa completo do site com links para conteúdo, suporte e legal." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/sitemap" />
+      </Helmet>
       <Header />
       
       <main className="pt-24 pb-16">
