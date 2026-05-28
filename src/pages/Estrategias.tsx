@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -64,6 +65,11 @@ const Estrategias = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Estratégias de Trading | Vespers Bot</title>
+        <meta name="description" content="Conheça as 4 estratégias automatizadas da Vespers Bot: Fusion Matrix, Echo Rebound, Quantum AI e Gridlock X para futuros." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/estrategias" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       

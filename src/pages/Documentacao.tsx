@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -60,6 +61,11 @@ const Documentacao = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Documentação de APIs | Vespers Bot</title>
+        <meta name="description" content="Acesse a documentação das APIs Binance, OKX e Huobi. Recursos técnicos para integração com a Vespers Bot." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/documentacao" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">

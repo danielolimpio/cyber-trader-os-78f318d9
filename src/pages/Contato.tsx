@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -13,6 +14,11 @@ const Contato = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contato e Suporte | Vespers Bot</title>
+        <meta name="description" content="Entre em contato com a equipe Vespers Bot. Suporte via WhatsApp e email para dúvidas sobre trading automatizado." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/contato" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       

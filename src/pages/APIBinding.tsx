@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,11 @@ const APIBinding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vinculação API Binance | Vespers Bot</title>
+        <meta name="description" content="Guia passo a passo para vincular sua API da Binance à Vespers Bot. Configure com segurança e comece a operar." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/vinculacao-api" />
+      </Helmet>
       <Header />
       
       <main className="pt-24 pb-16">
