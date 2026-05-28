@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -103,6 +104,11 @@ const ComprarGas = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Comprar Gás VESPERS | Vespers Bot</title>
+        <meta name="description" content="Saiba como comprar gás (VESPERS) na Vespers Bot. Pacotes de 10 a 1000 USDT para manter suas operações ativas." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/comprar-gas" />
+      </Helmet>
       <Header />
       <main className="min-h-screen bg-background pt-16">
         {/* Hero Section */}

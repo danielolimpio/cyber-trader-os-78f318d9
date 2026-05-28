@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Shield, Cpu, HeadphonesIcon, TrendingUp } from "lucide-react";
@@ -37,6 +38,11 @@ const Sobre = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Sobre a Vespers Bot | Automação de Trading</title>
+        <meta name="description" content="Conheça a Vespers Bot: plataforma de automação inteligente para trading de criptomoedas com IA avançada e segurança total." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/sobre" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       <main className="pt-20">

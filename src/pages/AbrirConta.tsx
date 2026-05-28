@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -69,6 +70,11 @@ const AbrirConta = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Abrir Conta | Vespers Bot</title>
+        <meta name="description" content="Aprenda a criar sua conta na Vespers Bot em 10 passos simples. Registro completo com código de convite mqOHBV." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/abrir-conta" />
+      </Helmet>
       <Header />
       <main className="min-h-screen bg-background pt-16">
         {/* Hero Section */}

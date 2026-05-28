@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -28,6 +29,11 @@ const Tutoriais = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Tutoriais de Trading | Vespers Bot</title>
+        <meta name="description" content="Aprenda a usar a Vespers Bot com tutoriais completos. Guias de configuração, estratégias e operações automatizadas." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/tutoriais" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       

@@ -1,6 +1,7 @@
+import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useEffect } from "react";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -9,6 +10,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Política de Privacidade | Vespers Bot</title>
+        <meta name="description" content="Política de privacidade da Vespers Bot. Saiba como coletamos, usamos e protegemos suas informações pessoais." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/privacidade" />
+      </Helmet>
       <Header />
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">

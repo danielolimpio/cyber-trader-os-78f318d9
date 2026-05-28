@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,6 +15,11 @@ const ExecutarPasso = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Executar Vespers Bot | Guia</title>
+        <meta name="description" content="Guia para executar a Vespers Bot em modo semiautomático. Configure estratégias e inicie operações de trading." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/executar-passo" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">

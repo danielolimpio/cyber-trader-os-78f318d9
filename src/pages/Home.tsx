@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { FeatureCards } from "@/components/FeatureCards";
@@ -11,6 +12,11 @@ const WelcomePopup = lazy(() => import("@/components/WelcomePopup").then(m => ({
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Vespers Bot - Automação Inteligente para Futuros de Criptomoedas</title>
+        <meta name="description" content="Ganhos automáticos com seu dinheiro seguro na Binance! Automação inteligente para trading de futuros com IA avançada." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       <Suspense fallback={null}>

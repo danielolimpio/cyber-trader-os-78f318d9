@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -53,6 +54,11 @@ const SystemStatus = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Status do Sistema | Vespers Bot</title>
+        <meta name="description" content="Monitore o status em tempo real dos sistemas da Vespers Bot e das conexões com exchanges Binance, OKX e Huobi." />
+        <link rel="canonical" href="https://cyber-trader-os.lovable.app/status" />
+      </Helmet>
       <Header />
       <FloatingWhatsApp />
       
