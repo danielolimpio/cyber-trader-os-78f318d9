@@ -61,12 +61,12 @@ export const WelcomePopup = () => {
 
           {/* Title */}
           <h2 className="mb-2 text-xl md:text-2xl font-bold text-white leading-tight">
-            Licença <span className="text-primary">Grátis</span> por 3 Anos!
+            Licença de 3 Anos com <span className="text-primary">50% OFF</span>!
           </h2>
 
           {/* Description */}
           <p className="mb-6 text-sm text-white/70 max-w-xs leading-relaxed">
-            Entre em contato pelo WhatsApp para ganhar uma licença grátis válida por <strong className="text-white">3 anos!</strong>
+            Entre em contato pelo WhatsApp para garantir sua licença de <strong className="text-white">3 anos com 50% de desconto!</strong>
           </p>
 
 
