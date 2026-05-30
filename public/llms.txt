@@ -1,0 +1,29 @@
+# Vespers Bot
+
+> Automação inteligente de trading para criptomoedas com estratégias quantitativas e integração com as principais exchanges (Binance, OKX, Huobi).
+
+Vespers Bot é uma plataforma de trading automatizado que conecta-se via API às principais exchanges para executar estratégias como Fusion Matrix, Quantum AI e outras. Oferece histórico de resultados, tutoriais e suporte multilíngue.
+
+## Pages
+
+- [Home](/): Visão geral da plataforma e principais funcionalidades.
+- [Sobre](/sobre): Quem somos e a missão da Vespers Bot.
+- [Estratégias](/estrategias): Modelos automatizados de trading disponíveis.
+- [Históricos](/historicos): Resultados comprovados e cases de sucesso.
+- [Tutoriais](/tutoriais): Guias em vídeo para configuração e uso.
+- [Comprar Gás](/comprar-gas): Pacotes de gás (10-1000 USDT) com cashback.
+- [Abrir Conta](/abrir-conta): Cadastro nas exchanges parceiras.
+- [Vinculação de API](/vinculacao-api): Como conectar sua exchange à Vespers Bot.
+- [Depositar](/depositar): Instruções de depósito.
+- [Documentação](/documentacao): Documentação técnica da API.
+- [Central de Ajuda](/central-ajuda): Perguntas frequentes e suporte.
+- [Status do Sistema](/system-status): Monitoramento em tempo real das exchanges.
+- [Contato](/contato): Canais oficiais de atendimento.
+
+## Optional
+
+- [Política de Privacidade](/privacy-policy): Como tratamos seus dados.
+- [Termos de Serviço](/terms-of-service): Termos de uso da plataforma.
+- [Política de Cookies](/cookie-policy): Uso de cookies no site.
+- [Avisos Legais](/legal-notices): Informações legais.
+- [Sitemap](/sitemap): Mapa do site.
