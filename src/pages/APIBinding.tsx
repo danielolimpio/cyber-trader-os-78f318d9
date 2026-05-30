@@ -23,6 +23,10 @@ const APIBinding = () => {
         <title>Vinculação API Binance | Vespers Bot</title>
         <meta name="description" content="Guia passo a passo para vincular sua API da Binance à Vespers Bot. Configure com segurança e comece a operar." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/vinculacao-api" />
+        <meta property="og:title" content="Vinculação API Binance | Vespers Bot" />
+        <meta property="og:description" content="Guia passo a passo para vincular sua API da Binance à Vespers Bot. Configure com segurança e comece a operar." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/vinculacao-api" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       

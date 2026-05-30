@@ -74,6 +74,10 @@ const AbrirConta = () => {
         <title>Abrir Conta | Vespers Bot</title>
         <meta name="description" content="Aprenda a criar sua conta na Vespers Bot em 10 passos simples. Registro completo com código de convite mqOHBV." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/abrir-conta" />
+        <meta property="og:title" content="Abrir Conta | Vespers Bot" />
+        <meta property="og:description" content="Aprenda a criar sua conta na Vespers Bot em 10 passos simples. Registro completo com código de convite mqOHBV." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/abrir-conta" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="min-h-screen bg-background pt-16">

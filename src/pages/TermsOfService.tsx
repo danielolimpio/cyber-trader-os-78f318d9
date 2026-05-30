@@ -14,6 +14,10 @@ const TermsOfService = () => {
         <title>Termos de Uso | Vespers Bot</title>
         <meta name="description" content="Termos de uso da plataforma Vespers Bot. Condições gerais para utilização dos serviços de trading automatizado." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/termos" />
+        <meta property="og:title" content="Termos de Uso | Vespers Bot" />
+        <meta property="og:description" content="Termos de uso da plataforma Vespers Bot. Condições gerais para utilização dos serviços de trading automatizado." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/termos" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="pt-20 pb-16">

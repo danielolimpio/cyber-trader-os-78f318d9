@@ -61,6 +61,10 @@ const CentralAjuda = () => {
         <title>Central de Ajuda | Vespers Bot</title>
         <meta name="description" content="Central de ajuda da Vespers Bot. Encontre respostas para dúvidas frequentes sobre conta, depósito, API e estratégias." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/central-ajuda" />
+        <meta property="og:title" content="Central de Ajuda | Vespers Bot" />
+        <meta property="og:description" content="Central de ajuda da Vespers Bot. Encontre respostas para dúvidas frequentes sobre conta, depósito, API e estratégias." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/central-ajuda" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       

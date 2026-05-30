@@ -14,6 +14,10 @@ const LegalNotices = () => {
         <title>Avisos Legais | Vespers Bot</title>
         <meta name="description" content="Avisos legais da Vespers Bot. Informações importantes sobre riscos financeiros e regulamentações do trading." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/avisos" />
+        <meta property="og:title" content="Avisos Legais | Vespers Bot" />
+        <meta property="og:description" content="Avisos legais da Vespers Bot. Informações importantes sobre riscos financeiros e regulamentações do trading." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/avisos" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="pt-20 pb-16">

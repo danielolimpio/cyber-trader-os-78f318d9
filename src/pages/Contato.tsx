@@ -18,6 +18,10 @@ const Contato = () => {
         <title>Contato e Suporte | Vespers Bot</title>
         <meta name="description" content="Entre em contato com a equipe Vespers Bot. Suporte via WhatsApp e email para dúvidas sobre trading automatizado." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/contato" />
+        <meta property="og:title" content="Contato e Suporte | Vespers Bot" />
+        <meta property="og:description" content="Entre em contato com a equipe Vespers Bot. Suporte via WhatsApp e email para dúvidas sobre trading automatizado." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/contato" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />

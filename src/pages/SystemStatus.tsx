@@ -58,6 +58,10 @@ const SystemStatus = () => {
         <title>Status do Sistema | Vespers Bot</title>
         <meta name="description" content="Monitore o status em tempo real dos sistemas da Vespers Bot e das conexões com exchanges Binance, OKX e Huobi." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/status" />
+        <meta property="og:title" content="Status do Sistema | Vespers Bot" />
+        <meta property="og:description" content="Monitore o status em tempo real dos sistemas da Vespers Bot e das conexões com exchanges Binance, OKX e Huobi." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/status" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />
