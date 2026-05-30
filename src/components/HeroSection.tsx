@@ -102,6 +102,7 @@ export const HeroSection = () => {
                     videoId="pDSge06WSnE"
                     title="Vespers Bot Demonstration"
                     className="w-full h-full"
+                    priority
                   />
                   
                   {/* Screen Border Effect */}

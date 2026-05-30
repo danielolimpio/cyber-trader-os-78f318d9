@@ -5,9 +5,10 @@ interface YouTubeLazyProps {
   videoId: string;
   title: string;
   className?: string;
+  priority?: boolean;
 }
 
-export const YouTubeLazy = ({ videoId, title, className = "" }: YouTubeLazyProps) => {
+export const YouTubeLazy = ({ videoId, title, className = "", priority = false }: YouTubeLazyProps) => {
   const [loaded, setLoaded] = useState(false);
 
   if (loaded) {
@@ -32,8 +33,11 @@ export const YouTubeLazy = ({ videoId, title, className = "" }: YouTubeLazyProps
       <img
         src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
         alt={title}
+        width={480}
+        height={360}
         className="w-full h-full object-cover"
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : "auto"}
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover/yt:bg-black/40 transition-colors">
         <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center group-hover/yt:scale-110 transition-transform">
