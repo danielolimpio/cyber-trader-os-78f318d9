@@ -33,6 +33,10 @@ const Tutoriais = () => {
         <title>Tutoriais de Trading | Vespers Bot</title>
         <meta name="description" content="Aprenda a usar a Vespers Bot com tutoriais completos. Guias de configuração, estratégias e operações automatizadas." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/tutoriais" />
+        <meta property="og:title" content="Tutoriais de Trading | Vespers Bot" />
+        <meta property="og:description" content="Aprenda a usar a Vespers Bot com tutoriais completos. Guias de configuração, estratégias e operações automatizadas." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/tutoriais" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />

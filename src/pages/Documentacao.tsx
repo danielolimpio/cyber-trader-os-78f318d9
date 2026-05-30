@@ -65,6 +65,10 @@ const Documentacao = () => {
         <title>Documentação de APIs | Vespers Bot</title>
         <meta name="description" content="Acesse a documentação das APIs Binance, OKX e Huobi. Recursos técnicos para integração com a Vespers Bot." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/documentacao" />
+        <meta property="og:title" content="Documentação de APIs | Vespers Bot" />
+        <meta property="og:description" content="Acesse a documentação das APIs Binance, OKX e Huobi. Recursos técnicos para integração com a Vespers Bot." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/documentacao" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       

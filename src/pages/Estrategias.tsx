@@ -69,6 +69,10 @@ const Estrategias = () => {
         <title>Estratégias de Trading | Vespers Bot</title>
         <meta name="description" content="Conheça as 4 estratégias automatizadas da Vespers Bot: Fusion Matrix, Echo Rebound, Quantum AI e Gridlock X para futuros." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/estrategias" />
+        <meta property="og:title" content="Estratégias de Trading | Vespers Bot" />
+        <meta property="og:description" content="Conheça as 4 estratégias automatizadas da Vespers Bot: Fusion Matrix, Echo Rebound, Quantum AI e Gridlock X para futuros." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/estrategias" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />

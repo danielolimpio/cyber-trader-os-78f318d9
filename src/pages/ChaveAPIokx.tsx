@@ -23,6 +23,10 @@ const ChaveAPIokx = () => {
         <title>Configurar API OKX | Vespers Bot</title>
         <meta name="description" content="Configure sua chave API da OKX na Vespers Bot. Guia completo com instruções de segurança e vinculação de IP." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/chave-api-okx" />
+        <meta property="og:title" content="Configurar API OKX | Vespers Bot" />
+        <meta property="og:description" content="Configure sua chave API da OKX na Vespers Bot. Guia completo com instruções de segurança e vinculação de IP." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/chave-api-okx" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       

@@ -83,6 +83,10 @@ const Historicos = () => {
         <title>Histórico de Resultados | Vespers Bot</title>
         <meta name="description" content="Veja os resultados comprovados da Vespers Bot. Cases de sucesso com ROI de até 650% em trading automatizado de criptomoedas." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/historicos" />
+        <meta property="og:title" content="Histórico de Resultados | Vespers Bot" />
+        <meta property="og:description" content="Veja os resultados comprovados da Vespers Bot. Cases de sucesso com ROI de até 650% em trading automatizado de criptomoedas." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/historicos" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />

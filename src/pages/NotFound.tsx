@@ -14,6 +14,10 @@ const NotFound = () => {
       <Helmet>
         <title>Página Não Encontrada | Vespers Bot</title>
         <meta name="description" content="A página que você procura não foi encontrada. Volte para a página inicial da Vespers Bot." />
+        <meta property="og:title" content="Página Não Encontrada | Vespers Bot" />
+        <meta property="og:description" content="A página que você procura não foi encontrada. Volte para a página inicial da Vespers Bot." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>

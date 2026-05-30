@@ -16,6 +16,10 @@ const Home = () => {
         <title>Vespers Bot - Automação Inteligente para Futuros de Criptomoedas</title>
         <meta name="description" content="Ganhos automáticos com seu dinheiro seguro na Binance! Automação inteligente para trading de futuros com IA avançada." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/" />
+        <meta property="og:title" content="Vespers Bot - Automação Inteligente para Futuros de Criptomoedas" />
+        <meta property="og:description" content="Ganhos automáticos com seu dinheiro seguro na Binance! Automação inteligente para trading de futuros com IA avançada." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />

@@ -58,6 +58,10 @@ const Sitemap = () => {
         <title>Sitemap | Vespers Bot</title>
         <meta name="description" content="Navegue por todas as páginas do Vespers Bot. Mapa completo do site com links para conteúdo, suporte e legal." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/sitemap" />
+        <meta property="og:title" content="Sitemap | Vespers Bot" />
+        <meta property="og:description" content="Navegue por todas as páginas do Vespers Bot. Mapa completo do site com links para conteúdo, suporte e legal." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/sitemap" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       

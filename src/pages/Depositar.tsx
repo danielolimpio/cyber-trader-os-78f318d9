@@ -74,6 +74,10 @@ const Depositar = () => {
         <title>Como Depositar | Vespers Bot</title>
         <meta name="description" content="Guia completo para depositar USDT na Vespers Bot. Saiba os valores mínimos e como ativar seu bot de trading." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/depositar" />
+        <meta property="og:title" content="Como Depositar | Vespers Bot" />
+        <meta property="og:description" content="Guia completo para depositar USDT na Vespers Bot. Saiba os valores mínimos e como ativar seu bot de trading." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/depositar" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="min-h-screen bg-background pt-16">

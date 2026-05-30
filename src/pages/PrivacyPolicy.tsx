@@ -14,6 +14,10 @@ const PrivacyPolicy = () => {
         <title>Política de Privacidade | Vespers Bot</title>
         <meta name="description" content="Política de privacidade da Vespers Bot. Saiba como coletamos, usamos e protegemos suas informações pessoais." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/privacidade" />
+        <meta property="og:title" content="Política de Privacidade | Vespers Bot" />
+        <meta property="og:description" content="Política de privacidade da Vespers Bot. Saiba como coletamos, usamos e protegemos suas informações pessoais." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/privacidade" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="pt-20 pb-16">

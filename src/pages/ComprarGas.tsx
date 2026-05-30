@@ -108,6 +108,10 @@ const ComprarGas = () => {
         <title>Comprar Gás VESPERS | Vespers Bot</title>
         <meta name="description" content="Saiba como comprar gás (VESPERS) na Vespers Bot. Pacotes de 10 a 1000 USDT para manter suas operações ativas." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/comprar-gas" />
+        <meta property="og:title" content="Comprar Gás VESPERS | Vespers Bot" />
+        <meta property="og:description" content="Saiba como comprar gás (VESPERS) na Vespers Bot. Pacotes de 10 a 1000 USDT para manter suas operações ativas." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/comprar-gas" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <main className="min-h-screen bg-background pt-16">

@@ -19,6 +19,10 @@ const ExecutarPasso = () => {
         <title>Executar Vespers Bot | Guia</title>
         <meta name="description" content="Guia para executar a Vespers Bot em modo semiautomático. Configure estratégias e inicie operações de trading." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/executar-passo" />
+        <meta property="og:title" content="Executar Vespers Bot | Guia" />
+        <meta property="og:description" content="Guia para executar a Vespers Bot em modo semiautomático. Configure estratégias e inicie operações de trading." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/executar-passo" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       
