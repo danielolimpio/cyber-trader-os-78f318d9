@@ -42,6 +42,10 @@ const Sobre = () => {
         <title>Sobre a Vespers Bot | Automação de Trading</title>
         <meta name="description" content="Conheça a Vespers Bot: plataforma de automação inteligente para trading de criptomoedas com IA avançada e segurança total." />
         <link rel="canonical" href="https://cyber-trader-os.lovable.app/sobre" />
+        <meta property="og:title" content="Sobre a Vespers Bot | Automação de Trading" />
+        <meta property="og:description" content="Conheça a Vespers Bot: plataforma de automação inteligente para trading de criptomoedas com IA avançada e segurança total." />
+        <meta property="og:url" content="https://cyber-trader-os.lovable.app/sobre" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Header />
       <FloatingWhatsApp />
